@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- ZMIEŃ: tytuł karty przeglądarki i opis (to widać w wynikach wyszukiwania) -->
+<title>Biuro Rachunkowe „Przykład” | księgowość dla małych firm w Krakowie</title>
+<meta name="description" content="Przykładowe biuro rachunkowe z fikcyjnymi danymi: pokazuje, jak wygląda gotowa strona.">
+<style>
+/* ZMIEŃ: kolory. Wpisz własne kody w formacie #rrggbb. Kontrast tekstu do tła musi pozostać wysoki. */
+:root{--ink:#14213d;--muted:#4a5568;--bg:#f7f8fa;--card:#ffffff;--accent:#0b5d4b;--accent2:#e8f3ef;--line:#d9dee5}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--bg)}
+header{background:var(--card);border-bottom:1px solid var(--line)}
+.wrap{max-width:1040px;margin:0 auto;padding:0 1.2rem}
+nav{display:flex;flex-wrap:wrap;gap:.4rem 1.2rem;align-items:center;justify-content:space-between;padding:.9rem 0}
+nav a{color:var(--ink);text-decoration:none;font-weight:600}nav a:hover,nav a:focus{text-decoration:underline}
+.logo{font-size:1.15rem}
+.links{display:flex;flex-wrap:wrap;gap:.4rem 1.1rem}
+.hero{padding-top:3.2rem;padding-bottom:2.6rem}
+h1{font-size:clamp(1.8rem,5vw,2.7rem);line-height:1.2;margin:0 0 1rem}
+.lead{font-size:1.15rem;color:var(--muted);max-width:640px}
+.btn{display:inline-block;background:var(--accent);color:#fff;padding:.8rem 1.4rem;border-radius:8px;text-decoration:none;font-weight:700;margin:.6rem .6rem 0 0}
+.btn:focus,.btn:hover{outline:3px solid #8bc7b8}
+.btn.alt{background:#fff;color:var(--accent);border:2px solid var(--accent)}
+section{padding:2.4rem 0}
+h2{font-size:1.6rem;margin:0 0 1.2rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:1.2rem}
+.card h3{margin:.1rem 0 .5rem;font-size:1.15rem}
+.tint{background:var(--accent2)}
+.price{font-size:1.6rem;font-weight:800}
+details{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:.8rem 1rem;margin-bottom:.7rem}
+summary{cursor:pointer;font-weight:700}
+footer{padding:2rem 0;color:var(--muted);font-size:.92rem;border-top:1px solid var(--line);margin-top:2rem}
+.skip{position:absolute;left:-999px}.skip:focus{left:1rem;top:1rem;background:#fff;padding:.5rem;z-index:9}
+@media(max-width:560px){body{font-size:16px}.hero{padding-top:2rem}}
+</style>
+</head>
+<body>
+<div style="background:#7a1f1f;color:#fff;text-align:center;padding:.6rem 1rem">PRZYKŁAD z fikcyjnymi danymi (usuń ten pasek na własnej stronie, jest w tym pliku zaraz pod znacznikiem body).</div>
+<a class="skip" href="#glowna">Przejdź do treści</a>
+<header><div class="wrap"><nav aria-label="Menu główne">
+<!-- ZMIEŃ: nazwa w lewym górnym rogu -->
+<a class="logo" href="#">Biuro Rachunkowe „Przykład”</a>
+<div class="links"><a href="#uslugi">Usługi</a><a href="#ksef">KSeF</a><a href="#cennik">Pakiety</a><a href="#faq">Pytania</a><a href="#kontakt">Kontakt</a></div>
+</nav></div></header>
+<main id="glowna">
+<div class="wrap hero">
+<!-- ZMIEŃ: nagłówek i opis na górze strony -->
+<h1>Księgowość mikrofirm bez stresu</h1>
+<p class="lead">Prowadzimy księgowość jednoosobowych firm i spółek do kilku pracowników. Stały opiekun i jasna wycena.</p>
+<a class="btn" href="#kontakt">Skontaktuj się</a>
+</div>
+
+<section id="uslugi"><div class="wrap"><h2>Czym się zajmujemy</h2>
+<div class="grid">
+<!-- ZMIEŃ: trzy usługi. Możesz skopiować cały blok <div class="card">…</div>, aby dodać kolejną. Usuń blok, jeśli niepotrzebny. -->
+<div class="card"><h3>Księgowość i podatki</h3><p>Pełna księgowość lub książka przychodów i rozchodów, VAT, JPK, deklaracje.</p></div>
+<div class="card"><h3>Kadry i płace</h3><p>Umowy, listy płac, ZUS dla małych zespołów.</p></div>
+<div class="card"><h3>Doradztwo na start</h3><p>Wybór formy opodatkowania i rozliczeń przy zakładaniu firmy.</p></div>
+</div></div></section>
+
+<!-- Sekcja KSeF: jeśli jej nie potrzebujesz, usuń całość od <section id="ksef"> do </section> ORAZ odnośnik <a href="#ksef">KSeF</a> w menu u góry. -->
+<section id="ksef" class="tint"><div class="wrap"><h2>KSeF: w czym pomagacie klientom</h2>
+<div class="grid">
+<div class="card"><h3>Uprawnienia i dostęp</h3><p>Pomagamy ustalić, kto w firmie wystawia i odbiera faktury w KSeF.</p></div>
+<div class="card"><h3>Faktury kosztowe</h3><p>Pobieramy faktury zakupu i prosimy o akceptację przed księgowaniem.</p></div>
+<div class="card"><h3>Pytania klientów</h3><p>Krótka instrukcja i kontakt, gdy coś się nie zgadza.</p></div>
+</div><p>Zakres usług w KSeF ustalamy w umowie.</p></div></section>
+
+<section id="cennik"><div class="wrap"><h2>Pakiety</h2>
+<div class="grid">
+<!-- ZMIEŃ: nazwy, ceny i zakres. Jeśli nie podajesz cen, wpisz „wycena indywidualna”. -->
+<div class="card"><h3>Start</h3><p class="price">od 250 zł / mies.</p><p>Do 20 dokumentów miesięcznie, kontakt e-mail.</p></div>
+<div class="card"><h3>Standard</h3><p class="price">od 450 zł / mies.</p><p>Do 60 dokumentów, KSeF, stały opiekun.</p></div>
+<div class="card"><h3>Z kadrami</h3><p class="price">wycena indywidualna</p><p>Księgowość i kadry w jednym miejscu.</p></div>
+</div></div></section>
+
+<section id="faq"><div class="wrap"><h2>Najczęstsze pytania</h2>
+<!-- ZMIEŃ: pytania i odpowiedzi. Blok <details>…</details> można kopiować. -->
+<details><summary>Jak szybko dostanę wycenę?</summary><p>Napisz lub zadzwoń, odpowiemy najszybciej, jak to możliwe.</p></details>
+<details><summary>Czy muszę przynosić papierowe faktury?</summary><p>Nie, dokumenty przesyłasz elektronicznie.</p></details>
+<details><summary>Czy mogę zmienić biuro w trakcie roku?</summary><p>Tak, pomożemy przejąć dokumenty od poprzedniego biura.</p></details>
+</div></section>
+
+<section id="kontakt"><div class="wrap"><h2>Kontakt</h2>
+<!-- ZMIEŃ: wpisz swój adres e-mail w DWÓCH miejscach w linku poniżej (po mailto: i w tekście przycisku) oraz telefon.
+     Przycisk otwiera program pocztowy odwiedzającego z gotowym tematem. To NIE jest formularz na serwerze;
+     wiadomość wysyła się z poczty odwiedzającego. Gdy chcesz prawdziwy formularz, zobacz INSTRUKCJA.md, rozdział 9. -->
+<p>Napisz lub zadzwoń. Dane poniżej są fikcyjne.</p>
+<a class="btn" href="mailto:kontakt@przyklad.invalid?subject=Zapytanie%20ze%20strony">Napisz: kontakt@przyklad.invalid</a>
+<a class="btn alt" href="tel:+48000000000">Zadzwoń: 000 000 000</a>
+<p>ul. Przykładowa 1, Kraków, pon.–pt. 9:00–16:00 (fikcyjny adres)</p></div></section>
+</main>
+<footer><div class="wrap">
+<!-- ZMIEŃ: dane firmy i informacja o danych osobowych. Szablon tekstu NIE jest poradą prawną; poproś o weryfikację osobę znającą RODO. -->
+<p>Biuro Rachunkowe „Przykład” (FIKCJA), NIP 000-000-00-00</p>
+<p><strong>Informacja o danych:</strong> Administratorem danych jest właściciel strony. Ta strona nie zbiera danych sama: wiadomości przychodzą e-mailem lub telefonicznie. To jest przykład na danych fikcyjnych.</p>
+</div></footer>
+</body></html>
